@@ -1,12 +1,55 @@
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
+.grid {
+  display: grid;
+  grid-template-columns: 3fr 6fr 3fr;
+  grid-template-rows: 250px 2fr 1fr;
+  grid-gap: 5px;
 }
-th, td {
-  padding: 5px;
-  text-align: left;    
-}
+
 body {
-  background-color: snow;
-  font-family: Comic Sans MS;
+  font-family: "Comic Sans MS";
+}
+  
+.title {
+  grid-row: 1;
+  grid-column: 1 / span 1;
+  padding-left: 15px;
+}
+
+.philosophy {
+  grid-row: 1;
+  grid-column: 2 / span 2;
+}
+
+.abigail {
+  grid-row: 2;
+  grid-column: 1;
+  background-color: #ff3333;
+  padding-left: 5px;
+}
+
+.joseph {
+  grid-row: 2;
+  grid-column: 2;
+  background-color: #b3ffda;
+  padding-left: 5px;
+}
+
+.highlights {
+  grid-row: 2;
+  grid-column: 3;
+}
+
+.podcasts {
+  grid-row: 3;
+  grid-column: 1;
+}
+
+.videos {
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.other {
+  grid-row: 3;
+  grid-column: 3;
 }
